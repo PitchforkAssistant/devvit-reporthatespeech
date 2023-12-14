@@ -36,6 +36,7 @@ Devvit.addSettings([
         scope: SettingScope.Installation,
         defaultValue: DEFAULTS.MHS_TARGETS,
         options: OPTIONS.MHS_TARGETS,
+        multiSelect: true,
     },
     {
         type: "boolean",

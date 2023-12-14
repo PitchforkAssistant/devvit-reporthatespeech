@@ -13,9 +13,9 @@
     "lint": "eslint . --ext .ts"
   },
   "dependencies": {
-    "@devvit/protos": "0.10.11-next-2023-12-14-a10f5df12.0",
-    "@devvit/public-api": "0.10.11-next-2023-12-14-a10f5df12.0",
-    "@devvit/shared-types": "0.10.11-next-2023-12-14-a10f5df12.0"
+    "@devvit/protos": "0.10.11",
+    "@devvit/public-api": "0.10.11",
+    "@devvit/shared-types": "0.10.11"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.14.0",
