@@ -1,5 +1,5 @@
-const MHS_SCORE_ENDPOINT = "https://api.moderatehatespeech.com/api/v1/moderate";
-const MHS_REPORT_ENDPOINT = "https://api.moderatehatespeech.com/api/v1/report";
+const MHS_SCORE_ENDPOINT = "https://api.moderatehatespeech.com/api/v1/moderate/";
+const MHS_REPORT_ENDPOINT = "https://api.moderatehatespeech.com/api/v1/report/";
 
 export type ModerateHatespeechResponse = {
     confidence: number;

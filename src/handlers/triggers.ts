@@ -27,7 +27,7 @@ export async function onPostCreate (event: OnTriggerEvent<PostCreate>, context: 
     }
 
     const apiKey = await context.settings.get<string>("mhsApiKey");
-    if (apiKey === undefined) {
+    if (!apiKey) {
         throw "Skipping comment check, no API key set";
     }
 
@@ -63,7 +63,7 @@ export async function onPostUpdate (event: OnTriggerEvent<PostUpdate>, context: 
 // Comment Triggers
 export async function onCommentCreate (event: OnTriggerEvent<CommentCreate>, context: TriggerContext) {
     const checks = await context.settings.get<string[]>("mhsTargets");
-    if (!checks || !checks.includes("comments")) {
+    if (!checks || !checks.includes("comment")) {
         console.log(`Skipping comment check, not enabled in settings: ${checks?.toString()}`);
         return;
     }
@@ -86,7 +86,7 @@ export async function onCommentCreate (event: OnTriggerEvent<CommentCreate>, con
     }
 
     const apiKey = await context.settings.get<string>("mhsApiKey");
-    if (apiKey === undefined) {
+    if (!apiKey) {
         throw "Skipping comment check, no API key set";
     }
 
